@@ -1,1 +1,2 @@
-# Project_OOP_C#
+# 3IID-P/2023-SPL03-Programowanie obiektowe 
+# w68166
