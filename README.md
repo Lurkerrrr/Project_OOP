@@ -1,2 +1,1 @@
-# 3IID-P/2023-SPL03-Programowanie obiektowe 
-w68166
+3IID-P/2023-SPL03 w68166
