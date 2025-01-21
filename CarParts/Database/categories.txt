@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "Name": "Engine Parts",
+    "Description": "Components for car engines"
+  },
+  {
+    "Id": 2,
+    "Name": "Brakes",
+    "Description": "Brake pads and rotors"
+  },
+  {
+    "Id": 3,
+    "Name": "Suspension",
+    "Description": "Shocks and struts"
+  },
+  {
+    "Id": 4,
+    "Name": "Electrical",
+    "Description": "Batteries, alternators, and more"
+  },
+  {
+    "Id": 5,
+    "Name": "Exhaust",
+    "Description": "Mufflers and pipes"
+  },
+  {
+    "Id": 6,
+    "Name": "Interior",
+    "Description": "Seats, mats, and accessories"
+  },
+  {
+    "Id": 7,
+    "Name": "Exterior",
+    "Description": "Body panels and mirrors"
+  },
+  {
+    "Id": 8,
+    "Name": "Lighting",
+    "Description": "Headlights, tail lights, and bulbs"
+  },
+  {
+    "Id": 9,
+    "Name": "Tires",
+    "Description": "All types of tires"
+  },
+  {
+    "Id": 10,
+    "Name": "Accessories",
+    "Description": "Miscellaneous car accessories"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "Name": "Global Auto Parts",
+    "ContactInfo": "global@autoparts.com",
+    "Address": "123 Elm Street",
+    "PhoneNumber": "123-456-7890"
+  },
+  {
+    "Id": 2,
+    "Name": "Fast Cars Supplies",
+    "ContactInfo": "info@fastcars.com",
+    "Address": "456 Maple Avenue",
+    "PhoneNumber": "234-567-8901"
+  },
+  {
+    "Id": 3,
+    "Name": "Parts Warehouse",
+    "ContactInfo": "support@partswarehouse.com",
+    "Address": "789 Oak Blvd",
+    "PhoneNumber": "345-678-9012"
+  },
+  {
+    "Id": 4,
+    "Name": "Speedy Delivery",
+    "ContactInfo": "contact@speedydelivery.com",
+    "Address": "101 Pine St",
+    "PhoneNumber": "456-789-0123"
+  },
+  {
+    "Id": 5,
+    "Name": "AutoZone Suppliers",
+    "ContactInfo": "autozone@suppliers.com",
+    "Address": "202 Cedar Ln",
+    "PhoneNumber": "567-890-1234"
+  },
+  {
+    "Id": 6,
+    "Name": "Luxury Auto Supplies",
+    "ContactInfo": "luxury@autosupplies.com",
+    "Address": "303 Birch Rd",
+    "PhoneNumber": "678-901-2345"
+  },
+  {
+    "Id": 7,
+    "Name": "Discount Parts Co.",
+    "ContactInfo": "discount@partsco.com",
+    "Address": "404 Cherry Ave",
+    "PhoneNumber": "789-012-3456"
+  },
+  {
+    "Id": 8,
+    "Name": "ProParts",
+    "ContactInfo": "sales@proparts.com",
+    "Address": "505 Walnut Way",
+    "PhoneNumber": "890-123-4567"
+  },
+  {
+    "Id": 9,
+    "Name": "TechAuto Supplies",
+    "ContactInfo": "tech@autosupplies.com",
+    "Address": "606 Willow Ct",
+    "PhoneNumber": "901-234-5678"
+  },
+  {
+    "Id": 10,
+    "Name": "Reliable Auto Parts",
+    "ContactInfo": "reliable@autoparts.com",
+    "Address": "707 Aspen Dr",
+    "PhoneNumber": "012-345-6789"
+  }
+]

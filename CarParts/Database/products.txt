@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "Brake Pads",
+    "Price": 50,
+    "Code": null
+  },
+  {
+    "Id": 2,
+    "Name": "Engine Oil Filter",
+    "Price": 25,
+    "Code": null
+  },
+  {
+    "Id": 3,
+    "Name": "Shock Absorber",
+    "Price": 120.5,
+    "Code": null
+  },
+  {
+    "Id": 4,
+    "Name": "Rotors",
+    "Price": 80,
+    "Code": null
+  }
+]
