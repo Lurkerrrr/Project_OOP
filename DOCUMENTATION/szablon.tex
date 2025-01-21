@@ -1,0 +1,59 @@
+% **** Szablon pracy magisterskiej, licencjackiej lub inżynierskiej ****
+
+\documentclass[polish,12pt,twoside,a4paper]{report}
+
+\input{style.tex}
+
+%definicja przydatnych poleceń
+\newcommand{\wydzial}{KOLEGIUM INFORMATYKI STOSOWANEJ}
+\newcommand{\kierunek}{Kierunek: INFORMATYKA}
+\newcommand{\specjalnosc}{Specjalność: {PROGRAMOWANIE}}
+\newcommand{\autor}{Viktor Pylypenko}
+\newcommand{\album}{Nr albumu studenta W68166}
+\newcommand{\temat}{Aplikacja z interfejsem GUI do zarządzania sklepem z częściami samochodowymi}
+\newcommand{\promotor}{mgr inż. Ewa Żesławska}
+\newcommand{\typpracy}{Praca projektowa programowanie obiekotwe C\#}
+\newcommand{\miasto}{Rzeszów}
+\newcommand{\rok}{2025}
+
+\begin{document}
+
+% *************** Włączenie definicji pierwszych stron ***************
+\input{front.tex}
+
+
+% *************** Część główna pracy ***************
+\input{wstep.tex}
+\addcontentsline{toc}{chapter}{Wstęp}
+\newpage
+\input{R1.tex}
+\newpage
+\input{R2.tex}
+\newpage
+\input{R3.tex}
+\newpage
+\input{R4.tex}
+\newpage
+\input{R5.tex}
+\newpage
+
+
+% *************** Bibliografia ***************
+\begin{thebibliography}{6}
+\addcontentsline{toc}{chapter}{Bibliografia}
+%dodanie wpisu do spisu bibliograficznego
+
+\bibitem{swagger} Swagger Documentation, \textit{https://swagger.io/docs/}, dostęp: 20.01.2025.
+\bibitem{dotnet} Microsoft, \textit{ASP.NET Core Documentation}, Microsoft, dostęp: 20.01.2025.
+\bibitem{rest-api} Fielding, R. T., \textit{Architectural Styles and the Design of Network-based Software Architectures}, University of California, 2000.
+\bibitem{windows-forms} Microsoft, \textit{Windows Forms Documentation}, Microsoft, dostęp: 20.01.2025.
+\bibitem{git} Git Documentation, \textit{https://git-scm.com/doc}, dostęp: 20.01.2025.
+
+\end{thebibliography}
+\newpage
+
+% *************** Zakończenie ***************
+\input{back.tex}
+
+\end{document}
+% *************** Koniec pliku szablon.tex ***************

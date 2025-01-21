@@ -1,0 +1,9 @@
+% ********** Rozdział 1 ********** \chapter{Opis założeń projektu} \section{Cele projektu}
+
+
+\chapter{Wymagania funkcjonalne i niefunkcjonalne} \noindent \section{Wymagania funkcjonalne} \begin{itemize} \item System umożliwia operacje CRUD na encjach: \begin{itemize} \item Kategorie (Category) – zarządzanie nazwą i opisem. \item Produkty (Product) – zarządzanie nazwą, ceną, kodem oraz powiązaniem z kategorią i dostawcą. \item Dostawcy (Supplier) – zarządzanie nazwą, informacjami kontaktowymi oraz adresem. \end{itemize} \item Intuicyjny interfejs użytkownika pozwala na przeglądanie, dodawanie, edytowanie oraz usuwanie danych. \item Walidacja danych wejściowych, np. ograniczenie zakresu cen czy maksymalna długość pól tekstowych. \item Obsługa API, umożliwiająca komunikację z backendem za pomocą klasy HttpClient. \item Przechowywanie danych w plikach JSON. \end{itemize}
+
+\noindent \section{Wymagania niefunkcjonalne:} \begin{itemize} \item \textbf{Wydajność:} Operacje CRUD muszą działać z minimalnym opóźnieniem. \item \textbf{Skalowalność:} Struktura projektu umożliwia dodawanie nowych funkcjonalności. \item \textbf{Stabilność:} Obsługa wyjątków chroni system przed błędami krytycznymi. \item \textbf{Przenośność:} Kompatybilność z każdym systemem obsługującym środowisko .NET Core. \item \textbf{Bezpieczeństwo:} Walidacja danych chroni przed błędami i nieprawidłowymi danymi. \item \textbf{Dostępność:} Intuicyjny GUI ułatwia obsługę aplikacji przez użytkowników bez zaawansowanej wiedzy technicznej. \end{itemize}
+
+
+% ********** Koniec rozdziału **********

@@ -1,0 +1,107 @@
+% ********** Rozdział 2 **********
+\chapter{Opis struktury projektu}
+
+\section{Struktura i Opis Techniczny}
+System został zaprojektowany w oparciu o architekturę warstwową, składającą się z następujących komponentów:
+\begin{itemize}
+    \item Warstwa Kontrolerów: Obsługuje zapytania HTTP i deleguje logikę do odpowiednich usług.
+    \item Warstwa Usług: Implementuje logikę biznesową, operując na danych i koordynując interakcje z bazą danych.
+    \item Warstwa Modeli: Definiuje struktury danych używane w systemie.
+    \item Baza Danych: Przechowuje dane systemowe w formacie JSON, korzystając z plików jako persystencji.
+\end{itemize}
+
+\section{Język, Narzędzia i Wymagania Sprzętowe}
+\subsection{Język Programowania}
+System został zaimplementowany w języku \textbf{C\#} z wykorzystaniem frameworka \textbf{ASP.NET Core}.
+
+\subsection{Narzędzia}
+\begin{itemize}
+    \item IDE: Microsoft Visual Studio
+    \item Biblioteki: Newtonsoft.Json (do operacji na danych JSON)
+    \item Serwer: Kestrel wbudowany w ASP.NET Core
+    \item Testowanie: Swagger UI dla testowania API
+\end{itemize}
+
+\subsection{Minimalne Wymagania Sprzętowe}
+\begin{itemize}
+    \item Procesor: Dual-core 2 GHz lub lepszy
+    \item RAM: 4 GB
+    \item Dysk: 100 MB wolnego miejsca
+    \item System Operacyjny: Windows 10 lub nowszy
+\end{itemize}
+
+\section{Zarządzanie Danymi i Baza Danych}
+Dane w systemie przechowywane są w formacie JSON w plikach:
+\begin{itemize}
+    \item \texttt{categories.txt} - kategorie produktów
+    \item \texttt{products.txt} - produkty
+    \item \texttt{suppliers.txt} - dostawcy
+\end{itemize}
+
+Operacje na danych realizowane są za pomocą klasy \texttt{FileStorageHelper}, która umożliwia odczyt i zapis danych JSON.
+
+\section{Hierarchia Klas i Kluczowe Metody}
+Hierarchia klas została zaprojektowana w sposób modularny i rozszerzalny. Kluczowe klasy to:
+
+\subsection{Klasa \texttt{Category}}
+Definicja kategorii produktów.
+\begin{itemize}
+    \item \textbf{Właściwości:}
+    \begin{itemize}
+        \item \texttt{Id} - identyfikator kategorii
+        \item \texttt{Name} - nazwa kategorii
+        \item \texttt{Description} - opis kategorii
+    \end{itemize}
+\end{itemize}
+
+\subsection{Klasa \texttt{CategoryService}}
+Implementacja logiki biznesowej dla kategorii.
+\begin{itemize}
+    \item \texttt{GetAllCategories()} - zwraca wszystkie kategorie.
+    \item \texttt{GetCategoryById(int id)} - zwraca kategorię na podstawie \texttt{Id}.
+    \item \texttt{AddCategory(Category category)} - dodaje nową kategorię.
+    \item \texttt{UpdateCategory(int id, Category category)} - aktualizuje istniejącą kategorię.
+    \item \texttt{DeleteCategory(int id)} - usuwa kategorię.
+\end{itemize}
+
+\subsection{Klasa \texttt{Product}}
+Definicja produktu.
+\begin{itemize}
+    \item \textbf{Właściwości:}
+    \begin{itemize}
+        \item \texttt{Id} - identyfikator produktu
+        \item \texttt{Name} - nazwa produktu
+        \item \texttt{Price} - cena produktu
+        \item \texttt{Code} - kod produktu
+    \end{itemize}
+\end{itemize}
+
+\subsection{Klasa \texttt{ProductService}}
+Logika biznesowa dla produktów.
+\begin{itemize}
+    \item \texttt{GetAllProducts()} - zwraca wszystkie produkty.
+    \item \texttt{AddProduct(Product product)} - dodaje nowy produkt.
+    \item \texttt{UpdateProduct(int id, Product product)} - aktualizuje istniejący produkt.
+\end{itemize}
+
+\subsection{Klasa \texttt{Supplier}}
+Definicja dostawcy.
+\begin{itemize}
+    \item \textbf{Właściwości:}
+    \begin{itemize}
+        \item \texttt{Id} - identyfikator dostawcy
+        \item \texttt{Name} - nazwa dostawcy
+        \item \texttt{ContactInfo} - informacje kontaktowe
+        \item \texttt{Address} - adres
+    \end{itemize}
+\end{itemize}
+
+\subsection{Klasa \texttt{SupplierService}}
+Logika biznesowa dla dostawców.
+\begin{itemize}
+    \item \texttt{GetAllSuppliers()} - zwraca wszystkich dostawców.
+    \item \texttt{AddSupplier(Supplier supplier)} - dodaje nowego dostawcę.
+    \item \texttt{UpdateSupplier(int id, Supplier supplier)} - aktualizuje dane dostawcy.
+\end{itemize}
+
+% ********** Koniec rozdziału **********
